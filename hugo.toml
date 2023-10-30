@@ -1,0 +1,23 @@
+baseURL = "https://www.webreaktor.nl"
+languageCode = "en-us"
+title = "WebReaktor"
+resourceDir = "resources"
+
+[permalinks]
+portfolio = "/:slug/"
+footerteksten = "/:slug/"
+
+
+# Definieer hier de verwerking van SCSS-bestanden
+[build]
+  writeStats = true
+  [build.resources]
+    [build.resources.PostCSS]
+      # Voeg SCSS-bestand toe als bron en configureer de uitvoer
+      [build.resources.PostCSS.modules]
+        entry = "assets/scss/main.scss"
+        output = "static/css/main.css"
+
+[security]
+  [security.funcs]
+    getenv = ["^HUGO_", "^WC_"]

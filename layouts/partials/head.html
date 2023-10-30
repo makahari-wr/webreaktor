@@ -1,0 +1,108 @@
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>WebReaktor - Krachtige Websites</title>
+  
+    <!-- start met yoast -->
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}Supersnelle en krachtige vindbare Websites{{ end }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+    <meta property="og:locale" content="nl_NL" />
+    <meta property="og:type" content="{{ with .Params.pageType }}{{ . }}{{ else }}website{{ end }}" />
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:description" content="{{ .Description }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:site_name" content="WebReaktor" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "{{ with .Params.pageType }}{{ . }}{{ else }}WebPage{{ end }}",
+            "@id": "{{ .Permalink }}",
+            "url": "{{ .Permalink }}",
+            "name": "{{ .Title }} - WebReaktor",
+            "isPartOf": {
+              "@id": "{{ .Site.BaseURL }}#website"
+            },
+            "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-07:00" }}",
+            "dateModified": "{{ .Params.lastmod.Format "2006-01-02T15:04:05-07:00" }}",
+            "description": "{{ .Description }}",
+            "inLanguage": "nl-NL",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": ["{{ .Permalink }}"]
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "{{ .Site.BaseURL }}#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "{{ .Site.BaseURL }}"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "{{ .Title }}",
+                "item": "{{ .Permalink }}"
+              }
+            ]
+          },
+          {{ if eq .Kind "home" }}
+          {
+            "@type": "WebSite",
+            "@id": "{{ .Site.BaseURL }}#website",
+            "url": "{{ .Site.BaseURL }}",
+            "name": "WebReaktor",
+            "description": "WebReaktor biedt webdesign, SEO en SEA diensten.",
+            "inLanguage": "nl-NL"
+          }
+          {{ end }}
+        ]
+      }
+      </script>
+
+      
+    <!-- einde yoast -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ "/images/WebReaktor-logo-icon.png" | relURL }}">
+    <!-- CSS here -->
+<!-- Preloading Stylesheets -->
+
+<link rel="preload" href="{{ "css/bootstrap.min.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ "css/meanmenu.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ "css/animate.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ "css/swiper-bundle.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ "css/backToTop.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ "css/magnific-popup.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ "css/fontAwesome6Pro.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ "css/flaticon_axil.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ "css/font-autography.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ "css/slick.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ "css/odometer.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ "css/default.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ "css/main.css?vers=2" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<!-- Loading Stylesheets  -->
+<link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/meanmenu.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/animate.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/swiper-bundle.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/backToTop.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/magnific-popup.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/fontAwesome6Pro.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/flaticon_axil.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/font-autography.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/slick.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/odometer.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/default.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+
+</head>

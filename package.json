@@ -1,0 +1,24 @@
+{
+  "name": "webreaktor-gohugo-afblijven",
+  "version": "1.0.0",
+  "description": "",
+  "main": "purgecss.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-responsive": "^3.0.1",
+    "gulp-terser": "^2.1.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "gulp-uglify": "^3.0.2"
+  }
+}

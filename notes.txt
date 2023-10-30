@@ -1,0 +1,10 @@
+
+// images met gulp verbeteren
+npx gulp images, daarna pas hugo cmd
+
+// alles js bundelen en minify naar bundle.js
+npx gulp bundleAndMinifyJs, daarna pas hugo
+
+nadat hugo cmd is uitgevoerd
+PurgeCSS command: purgecss --config purgecss.config.js
+public hernoemen naar httpdocs

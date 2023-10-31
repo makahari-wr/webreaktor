@@ -6,6 +6,8 @@ resourceDir = "resources"
 [permalinks]
 portfolio = "/:slug/"
 footerteksten = "/:slug/"
+website-laten-maken = "/:slug/"
+webshop-laten-maken = "/:slug/"
 
 
 # Definieer hier de verwerking van SCSS-bestanden

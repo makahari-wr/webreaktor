@@ -1,6 +1,6 @@
 ---
 title: ""
-type: "diensten/website-laten-bouwen"
+type: "diensten/website-laten-maken"
 slug: ""
 date: 2023-10-12
 lastmod: 2023-10-15

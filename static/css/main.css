@@ -4512,8 +4512,7 @@ Hero-6 Animation
   font-size: 14px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: var(--clr-common-white);
-  cursor: text;
+  color: var(--clr-theme-2);
   padding: 0;
   padding-left: 0px;
   display: inline-block;

@@ -1,7 +1,7 @@
 ---
 title: ""
-type: "diensten/webshop-laten-maken"
-slug: "diensten/webshop-laten-maken"
+type: "webshop-laten-maken"
+slug: "webshop-laten-maken"
 date: 2023-10-12
 lastmod: 2023-10-15
 description: ""

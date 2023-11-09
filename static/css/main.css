@@ -9029,6 +9029,11 @@ body {
     margin-bottom: 50px;
   }
 }
+.service-page-title-contenet h2 {
+  font-size: 30px;
+  color: var(--clr-common-white);
+  margin-bottom: 35px;
+}
 .service-page-title-contenet h3 {
   font-size: 30px;
   color: var(--clr-common-white);
@@ -16994,6 +16999,66 @@ label {
 /*----------------------------------------
 	45. gemaakt door marin
 ----------------------------------------*/
+
+.border-btn3 {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 21px 48px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  display: inline-block;
+  border: 1px solid #d9d9d9;
+  color: var(--clr-common-white);
+  background: transparent;
+}
+.border-btn3::before {
+  content: "";
+  position: absolute;
+  height: 400px;
+  width: 430px;
+  top: 50%;
+  left: 50%;
+  background: var(--clr-theme-2);
+  border-radius: 50%;
+  transform: translateX(-22%) translateY(-42%) scale(0);
+  -moz-transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.5s ease-out 0s;
+  -ms-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  z-index: -1;
+}
+.border-btn3:hover::before {
+  transform: translateX(-50%) translateY(-50%) scale(1);
+}
+.border-btn3::after {
+  position: absolute;
+  content: "";
+  background: var(--clr-theme-2);
+  height: 34px;
+  width: 36px;
+  border-radius: 15px;
+  right: -11px;
+  bottom: -11px;
+}
+.border-btn3:hover {
+  color: var(--clr-common-white);
+}
+.border-btn3 .btn-icon {
+  transform: rotate(-45deg);
+  margin-left: 15px;
+  display: inline-block;
+}
+.border-btn3 .btn-icon i {
+  display: inline-block;
+}
+.border-btn3:hover .btn-icon i {
+  animation: iconltr 0.5s forwards;
+}
 
 ul {
   list-style-position: inside;

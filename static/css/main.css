@@ -17064,6 +17064,7 @@ ul {
   list-style-position: inside;
 }
 
+/* zwarte lettertype start */
 .contact-btn-marin {
   color: var(--clr-theme-1);
 }
@@ -17084,7 +17085,7 @@ ul {
   }
 }
 .service-page-title-contenet-marin p {
-  margin-bottom: 0;
+  margin-bottom: 50px;
   font-size: 24px;
   line-height: 1.7;
   color: var(--clr-common-black);
@@ -17094,5 +17095,33 @@ ul {
     font-size: 20px;
   }
 }
+/* zwarte lettertype einde */
 
+/* witte lettertype start */
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .service-page-title-contenet-marin2 {
+    margin-bottom: 50px;
+  }
+}
+.service-page-title-contenet-marin2 h2 {
+  font-size: 30px;
+  color: var(--clr-common-white);
+  margin-bottom: 35px;
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .service-page-title-contenet-marin2 h3 {
+    font-size: 26px;
+  }
+}
+.service-page-title-contenet-marin2 p {
+  margin-bottom: 50px;
+  font-size: 24px;
+  line-height: 1.7;
+  color: var(--clr-common-white);
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .service-page-title-contenet-marin2 p {
+    font-size: 20px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

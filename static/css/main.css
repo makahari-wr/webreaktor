@@ -10446,7 +10446,7 @@ body {
 
 .team-item-2 {
   position: relative;
-  text-align: center;
+  text-align: top;
   border-top: 1px solid #414141;
 }
 .team-item-2.active .team-thmb-2 {
@@ -10500,7 +10500,7 @@ body {
 }
 .team-thmb-2 img {
   width: 100%;
-  aspect-ratio: 100/92;
+  aspect-ratio: 100/110;
 }
 
 .team-info-2 h3 {

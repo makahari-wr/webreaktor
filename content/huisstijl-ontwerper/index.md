@@ -1,7 +1,7 @@
 ---
 title: "Huisstijl ontwerper"
 type: "huisstijl-ontwerper"
-slug: ""
+slug: "huisstijl-laten-ontwerpen"
 date: 2023-10-12
 lastmod: 2023-10-15
 description: ""

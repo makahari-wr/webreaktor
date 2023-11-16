@@ -14,8 +14,8 @@
                         <div class="breadcrumb-menu mb-20">
                             <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
                                 <ul class="trail-items">
-                                    <li class="trail-item trail-begin"><span>Our Services</span></li>
-                                    <li class="trail-item"><span>Branding</span></li>
+                                    <a href="{{ "diensten" | relURL }}"><li class="trail-item trail-begin"><span>Diensten</span></li></a>
+                                    <a href="{{ "zoekmachine-advertenties" | relURL }}"><li class="trail-item"><span>Zoekmachine advertenties</span></li></a>                                    
                                 </ul>
                             </nav>
                         </div>
@@ -26,13 +26,19 @@
             <div class="row align-items-center">
                 <div class="col-xxl-6 col-xl-6 col-lg-6">
                     <div class="page-title-thumb">
-                        <img src="{{ "/img/diensten/website-laten-bouwen/website-laten-bouwen.jpg" | relURL }}" alt="image not found">
+                        <img src="{{ "/img/zoekmachine-advertenties/zoekmachine-advertenties.jpg" | relURL }}" alt="image not found">
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 order-first order-lg-last">
                     <div class="service-page-title-contenet">
-                        <h3 class="p-text">Wij maken websites die knallen</h3>
-                        <p class="p-text">In het digitale tijdperk is je website het visitekaartje van je onderneming. Bij WebReaktor begrijpen we het belang van een eerste indruk. Daarom ben je bij ons aan het juiste adres voor een website die niet alleen visueel aantrekkelijk is, maar ook optimaal presteert.</p>
+                        <h2 class="p-text">Adverteren op google</h2>
+                        <p class="p-text">Verhoog je online zichtbaarheid en trek meer klanten aan met WebReaktor's doeltreffende Google Ads strategieën. We zetten je merk in de spotlight waar jouw doelgroep zoekt, en zorgen voor meetbare resultaten. Met ons aan je zijde is elke klik een stap dichter bij succes.</p>
+                    </div>
+                    <div class="button-item mt-50 mb-50">
+                        <a href="{{ "contact" | relURL }}" class="border-btn3">
+                            <span class="btn-text">Neem contact op</span>
+                            <span class="btn-icon"><i class="flaticon-next"></i></span>
+                        </a>                        
                     </div>
                 </div>
             </div>
@@ -46,63 +52,43 @@
             <div class="row align-items-start">
                 <div class="col-xxl-7 col-xl-12">
                     <div class="section__title-wrapper mb-80">
-                        <h2 class="section__title-inner mb-45 title-anim">Een website door WebReaktor</h2>
-                        <p class="section-intro-paragraph xlarge p-text">Great brands take time, care, and
-                            belief
-                            to create. We help you uncover your brand through a series of exercises,
-                            exploring concepts, and creating
-                            marketing assets.</p>
+                        <h2 class="section__title-inner mb-45 title-anim">Voordelen van Google Ads met WebReaktor</h2>
+                        <p class="section-intro-paragraph xlarge p-text">Zet de stap naar effectieve Google Ads en ervaar de voordelen van precisie-targeting en maximale zichtbaarheid. Met WebReaktor aan je zijde profiteer je van een advertentiestrategie die resultaten levert.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="service-branding-main fix p-relative">
-            <div class="service-branding-thumb-2">
-                <img src="{{ "/img/diensten/website-laten-bouwen/website-laten-bouwen-3.jpg" | relURL }}" alt="image not found">
-            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-6-col-xl-6 col-lg-6">
                         <div class="service-branding-content">
                             <div class="service-branding-heading">
-                                <img height="45px" src="{{ "/img/marin-icons/responsive-website.png" | relURL }}" alt="image not found">
-                                <h3 class="service-branding-title">Brand Identity</h3>
+                                <img height="45px" src="{{ "/img/zoekmachine-advertenties/shared-vision.png" | relURL }}" alt="image not found">
+                                <h3 class="service-branding-title">Maximale zichtbaarheid</h3>
                             </div>
-                            <p class="xlarge">A brand includes many elements to create a complete identity.
-                                We breakdown
-                                the process by starting with the basics and building on from there. A brand
-                                includes many elements to create a complete identity. We breakdown the
-                                process by starting with the basics and building on from there.
+                            <p class="xlarge">Jouw advertenties verschijnen bovenaan in Google, waardoor je direct zichtbaar bent voor je doelgroep. We zorgen voor optimale plaatsing om je bereik en merkbekendheid te vergroten.
                             </p>
                         </div>
                         <div class="service-branding-content">
                             <div class="service-branding-heading">
-                                <img height="45px" src="{{ "/img/marin-icons/seo-search-symbol.png" | relURL }}">
-                                <h3 class="service-branding-title">Brand Identity</h3>
+                                <img height="45px" src="{{ "/img/zoekmachine-advertenties/money.png" | relURL }}">
+                                <h3 class="service-branding-title">Kosten efficiëntie</h3>
                             </div>
-                            <p class="xlarge">One of the largest food retailers needed to automate
-                                inspection and
-                                maintenance processes in their stores and update their troubleshooting
-                                reports. Retail companies have notoriously complex requirements when it
-                                comes to ongoing maintenance, and manual inspections can limit the ability
-                                to report and verify current conditions.</p>
+                            <p class="xlarge">Betaal alleen voor resultaten met onze kosten-effectieve benadering. Onze campagnes zijn ontworpen om het maximale uit elk budget te halen, met een focus op ROI en lagere kosten per klik.</p>
                         </div>
                         <div class="service-branding-content">
                             <div class="service-branding-heading">
-                                <img height="45px" src="{{ "/img/diensten/website-laten-bouwen/website-laten-bouwen-icon-4.png" | relURL }}">
-                                <h3 class="service-branding-title">Brand Identity</h3>
+                                <img height="45px" src="{{ "/img/zoekmachine-advertenties/target.png" | relURL }}">
+                                <h3 class="service-branding-title">Gerichte klantbenadering</h3>
                             </div>
-                            <p class="xlarge">Creative work that reaches hearts and minds and inspires
-                                action is the result
-                                of talent, understanding, refinement, and collaboration. As a Purpose First™
-                                agency, one of the first things we do at 20nine is to listen. We learn your
-                                goals, hear what drives you, and clarify who you want to connect with us.
+                            <p class="xlarge">Bereik precies die klanten die op zoek zijn naar wat jij aanbiedt. Onze geavanceerde targetingmethoden zorgen ervoor dat je boodschap de juiste mensen bereikt, wat leidt tot hogere conversieratio's en effectievere advertenties.
                             </p>
                         </div>
                     </div>
                     <div class="col-xxl-6-col-xl-6 col-lg-6">
                         <div class="service-branding-thumb-1">
-                            <img src="{{ "/img/diensten/website-laten-bouwen/website-laten-bouwen-ontwerp.jpg" | relURL }}" alt="image not found">
+                            <img src="{{ "/img/zoekmachine-advertenties/zoekmachine-advertenties2.jpg" | relURL }}" alt="image not found">
                         </div>
                     </div>
                 </div>
@@ -111,94 +97,126 @@
     </section>
     <!-- service branding area end -->
 
+      <!-- foto links text rechts begin -->
+    <section
+    class="page-title-area d-flex align-items-end  p-relative primary-bg pb-150 pt-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-12">
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 order-first order-lg-last">
+                <div class="service-page-title-contenet-marin2">
+                    <h2 class="p-text">Effectief jouw producten adverteren</h2>
+                    <p class="p-text">Zet jouw producten in de kijker met WebReaktor. Ons team creëert advertenties die opvallen, met het juiste mengsel van creativiteit en duidelijke boodschappen, zodat jouw producten de aandacht krijgen die ze verdienen.</p>
+                    <p class="p-text">Onze gerichte Google Ads strategieën zijn ontworpen om niet alleen een breed publiek te bereiken, maar ook kopers die klaarstaan om actie te ondernemen. Wij helpen je producten om van een eerste indruk tot een geslaagde aankoop te navigeren, en maximaliseren zo jouw online verkoop.</p>
+                </div>
+                <div class="button-item mt-50 mb-50">
+                    <a href="{{ "contact" | relURL }}" class="border-btn3">
+                        <span class="btn-text">Neem contact op</span>
+                        <span class="btn-icon"><i class="flaticon-next"></i></span>
+                    </a>                    
+                </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6">
+              <img src="{{ "/img/zoekmachine-advertenties/zoekmachine-advertenties1.jpg" | relURL }}" alt="image not found">             
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- foto links text rechts einde -->
+        <!-- foto rechts text links begin -->
+        <section
+        class="page-title-area d-flex align-items-end  p-relative  pb-150 pt-150">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xxl-6 col-xl-6 col-lg-6">
+                    <div class="service-page-title-contenet-marin">
+                        <h3 class="p-text">Google shopping advertenties met WebReaktor</h3>
+                        <p class="xlarge">Ontdek de kracht van Google Shopping met WebReaktor. Wij zijn experts in het creëren en beheren van Google Shopping campagnes die jouw producten direct voor de ogen van geïnteresseerde kopers plaatsen. Onze strategieën richten zich op het optimaliseren van jouw productfeed, zodat jouw aanbiedingen uitblinken in de Google Shopping resultaten.</p>
+                        <p class="xlarge">Met WebReaktor aan het roer, tillen we jouw Google Shopping ervaring naar een hoger niveau. We zorgen voor nauwkeurige targeting en effectieve advertentie-indelingen, waardoor jouw producten een voorsprong krijgen op de concurrentie. Dit betekent niet alleen meer zichtbaarheid, maar ook een betere kans op conversies en verkoop, rechtstreeks via Google Shopping.</p>
+                    </div>
+                    <div class="button-item mt-50">
+                        <a href="{{ "contact" | relURL }}" class="border-btn">
+                            <span class="btn-text">Neem contact op</span>
+                            <span class="btn-icon"><i class="flaticon-next"></i></span>
+                        </a>                        
+                    </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6">
+                        <img src="{{ "/img/zoekmachine-advertenties/zoekmachine-advertenties3.jpg" | relURL }}" alt="image not found">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- approch area start -->
     <section class="approch-area section-spacing">
         <div class="container">
             <div class="row align-items-center gy-50">
                 <div class="col-xxl-6 col-xl-6 col-lg-6">
                     <div class="approch-thumb">
-                        <img src="{{ "/img/diensten/website-laten-bouwen/website-bouwen-benadering.jpg" | relURL }}" alt="image not found">
+                        <img src="{{ "/img/webshop-laten-maken/webshop-laten-maken8.jpg" | relURL }}" alt="image not found">
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6">
                     <div class="section__title-wrapper mb-50">
-                        <h2 class="section__title-inner title-anim">Our Approch</h2>
+                        <h2 class="section__title-inner title-anim">Ons stappenplan</h2>
                     </div>
                     <div class="approch-tab">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="approch-1-tab" data-bs-toggle="tab"
                                     data-bs-target="#approch-1" type="button" role="tab"
-                                    aria-controls="approch-1" aria-selected="true">Discovery</button>
+                                    aria-controls="approch-1" aria-selected="true">1. Strategie</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="approch-2-tab" data-bs-toggle="tab"
                                     data-bs-target="#approch-2" type="button" role="tab"
-                                    aria-controls="approch-2" aria-selected="false">Identity</button>
+                                    aria-controls="approch-2" aria-selected="false">2. Opzet</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="approch-3-tab" data-bs-toggle="tab"
                                     data-bs-target="#approch-3" type="button" role="tab"
-                                    aria-controls="approch-3" aria-selected="false">Guide</button>
+                                    aria-controls="approch-3" aria-selected="false">3. Optimalisatie</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="approch-4-tab" data-bs-toggle="tab"
                                     data-bs-target="#approch-4" type="button" role="tab"
-                                    aria-controls="approch-4" aria-selected="false">Implement</button>
+                                    aria-controls="approch-4" aria-selected="false">4. Rapportage</button>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="approch-1" role="tabpanel"
                                 aria-labelledby="approch-1-tab">
                                 <div class="approch-content">
-                                    <p class="xlarge">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. Nihil
-                                        laudantium expedita consequatur reprehenderit voluptatum deleniti
-                                        placeat sunt autem commodi, minima eveniet. Alias necessitatibus
-                                        odio accusamus exercitationem expedita nobis consequatur magnam quam
-                                        doloribus, ipsa sapiente quia omnis aut voluptatem vel inventore
-                                        veritatis tenetur culpa nam molestias. Eius mollitia esse quaerat
-                                        excepturi!</p>
+                                    <p class="xlarge">Het proces begint met een diepgaande analyse van jouw bedrijfsdoelen, doelgroep, en concurrentielandschap. Hierbij identificeren we welke soorten advertenties het meest effectief zullen zijn voor jouw merk en stellen we een gedetailleerd plan op voor het bereiken van jouw specifieke marketingdoelen.
+                                    </p>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="approch-2" role="tabpanel"
                                 aria-labelledby="approch-2-tab">
                                 <div class="approch-content">
-                                    <p class="xlarge">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. Nihil
-                                        laudantium expedita consequatur reprehenderit voluptatum deleniti
-                                        placeat sunt autem commodi, minima eveniet. Alias necessitatibus
-                                        odio accusamus exercitationem expedita nobis consequatur magnam quam
-                                        doloribus, ipsa sapiente quia omnis aut voluptatem vel inventore
-                                        veritatis tenetur culpa nam molestias. Eius mollitia esse quaerat
-                                        excepturi!</p>
+                                    <p class="xlarge">Deze stap omvat het selecteren van de juiste zoekwoorden en het creëren van pakkende advertentieteksten. We stellen ook de campagne-instellingen zorgvuldig in om ervoor te zorgen dat jouw advertenties worden weergegeven aan de juiste doelgroepen, op de juiste plaatsen en tijden.
+                                    </p>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="approch-3" role="tabpanel"
                                 aria-labelledby="approch-3-tab">
                                 <div class="approch-content">
-                                    <p class="xlarge">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. Nihil
-                                        laudantium expedita consequatur reprehenderit voluptatum deleniti
-                                        placeat sunt autem commodi, minima eveniet. Alias necessitatibus
-                                        odio accusamus exercitationem expedita nobis consequatur magnam quam
-                                        doloribus, ipsa sapiente quia omnis aut voluptatem vel inventore
-                                        veritatis tenetur culpa nam molestias. Eius mollitia esse quaerat
-                                        excepturi!
+                                    <p class="xlarge">Na de lancering van de campagne monitoren we voortdurend de prestaties. We analyseren data zoals klikfrequenties, conversieratio's en de kosten per acquisitie. Aan de hand van deze gegevens voeren we aanpassingen uit om de effectiviteit van jouw campagne te maximaliseren en het beste rendement op jouw investering te waarborgen.
                                     </p>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="approch-4" role="tabpanel"
                                 aria-labelledby="approch-4-tab">
                                 <div class="approch-content">
-                                    <p class="xlarge">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. Nihil
-                                        laudantium expedita consequatur reprehenderit voluptatum deleniti
-                                        placeat sunt autem commodi, minima eveniet. Alias necessitatibus
-                                        odio accusamus exercitationem expedita nobis consequatur magnam quam
-                                        doloribus, ipsa sapiente quia omnis aut voluptatem vel inventore
-                                        veritatis tenetur culpa nam molestias. Eius mollitia esse quaerat
-                                        excepturi!.</p>
+                                    <p class="xlarge">Wij vinden transparantie belangrijk. Daarom bieden we regelmatige en gedetailleerde rapporten aan over de prestaties van jouw campagne. Deze rapporten geven inzicht in wat werkt, wat verbeterd kan worden, en hoe we verder kunnen optimaliseren voor toekomstig succes.</p>
                                 </div>
                             </div>
                         </div>
@@ -213,7 +231,7 @@
     <section class="faq-area section-spacing">
         <div class="container">
             <div class="section__title-wrapper tpl__item-center mb-60">
-                <h2 class="section__title-inner title-anim">FAQ on brand services</h2>
+                <h2 class="section__title-inner title-anim">Veelgestelde vragen</h2>
             </div>
             <div class="choose-accordion mb-0 tp-accordion-fix">
                 <div class="accordion" id="accordionExample-st-2">
@@ -224,7 +242,7 @@
                                     <button class="accordion-button collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseOne-st-2"
                                         aria-expanded="false" aria-controls="collapseOne-st-2">
-                                        How much do you charge for branding?
+                                        Wat is het verschil tussen Google Ads en Bing Ads?
                                     </button>
                                 </h2>
                                 <div id="collapseOne-st-2" class="accordion-collapse collapse"
@@ -233,9 +251,7 @@
                                     <div class="accordion-body">
                                         <div class="capabilities-list">
                                             <div class="choose-accordion-content">
-                                                <p>Axil is data-driven and performance-focused, paving the
-                                                    way for us to charge your business forward and
-                                                    accelerate your growth.</p>
+                                                <p>Google Ads en Bing Ads zijn beide platformen voor zoekmachineadvertenties, maar ze hebben verschillende gebruikersgroepen en functionaliteiten. Google heeft een groter bereik en geavanceerdere targetingopties, terwijl Bing Ads vaak lagere kosten per klik en minder concurrentie biedt. Het kiezen van het juiste platform hangt af van je doelgroep en marketingdoelen.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -246,7 +262,7 @@
                                     <button class="accordion-button collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseTwo-st-2"
                                         aria-expanded="false" aria-controls="collapseTwo-st-2">
-                                        Can you design only a logo?
+                                        Hoe bepaal je het budget voor zoekmachineadvertenties?
                                     </button>
                                 </h2>
                                 <div id="collapseTwo-st-2" class="accordion-collapse collapse"
@@ -255,11 +271,8 @@
                                     <div class="accordion-body">
                                         <div class="capabilities-list">
                                             <div class="choose-accordion-content">
-                                                <p>Axil is data-driven and performance-focused, paving
-                                                    the way
-                                                    for us to charge your business forward and
-                                                    accelerate your
-                                                    growth.</p>
+                                                <p>Het budget wordt bepaald op basis van je bedrijfsdoelen, de concurrentie-intensiteit in jouw sector, en de gemiddelde kosten per klik in jouw branche. We werken samen om een realistisch budget op te stellen dat past bij jouw marketingdoelen en financiële mogelijkheden.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -270,7 +283,7 @@
                                     <button class="accordion-button collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseThree-st-2"
                                         aria-expanded="false" aria-controls="collapseThree-st-2">
-                                        Can you design only a logo?
+                                        Zijn zoekmachineadvertenties geschikt voor kleine bedrijven?
                                     </button>
                                 </h2>
                                 <div id="collapseThree-st-2" class="accordion-collapse collapse"
@@ -279,11 +292,7 @@
                                     <div class="accordion-body">
                                         <div class="capabilities-list">
                                             <div class="choose-accordion-content">
-                                                <p>Axil is data-driven and performance-focused, paving
-                                                    the way
-                                                    for us to charge your business forward and
-                                                    accelerate your
-                                                    growth.</p>
+                                                <p>Zeker! Zoekmachineadvertenties kunnen zeer effectief zijn voor kleine bedrijven door hun flexibele budgetten en het vermogen om snel gerichte zichtbaarheid en verkeer naar je website te genereren.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -296,7 +305,7 @@
                                     <button class="accordion-button collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseFour-st-2"
                                         aria-expanded="false" aria-controls="collapseFour-st-2">
-                                        Why should I work with an agency over a freelancer?
+                                        Hoe meet je het succes van een zoekmachineadvertentiecampagne?
                                     </button>
                                 </h2>
                                 <div id="collapseFour-st-2" class="accordion-collapse collapse"
@@ -305,11 +314,7 @@
                                     <div class="accordion-body">
                                         <div class="capabilities-list">
                                             <div class="choose-accordion-content">
-                                                <p>Axil is data-driven and performance-focused, paving
-                                                    the way
-                                                    for us to charge your business forward and
-                                                    accelerate your
-                                                    growth.</p>
+                                                <p>Succes wordt gemeten aan de hand van KPI's zoals klikfrequentie (CTR), conversieratio, kosten per conversie en de algemene ROI van de campagne. We gebruiken geavanceerde trackingtools om deze statistieken voortdurend te monitoren en te optimaliseren.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -320,7 +325,7 @@
                                     <button class="accordion-button collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseFive-st-2"
                                         aria-expanded="false" aria-controls="collapseFive-st-2">
-                                        What is your process like?
+                                        Kunnen we advertenties richten op specifieke geografische locaties?
                                     </button>
                                 </h2>
                                 <div id="collapseFive-st-2" class="accordion-collapse collapse"
@@ -329,11 +334,7 @@
                                     <div class="accordion-body">
                                         <div class="capabilities-list">
                                             <div class="choose-accordion-content">
-                                                <p>Axil is data-driven and performance-focused, paving
-                                                    the way
-                                                    for us to charge your business forward and
-                                                    accelerate your
-                                                    growth.</p>
+                                                <p>Absoluut. Zoekmachineadvertenties kunnen zeer specifiek worden getarget op geografische locaties, van landniveau tot aan steden of zelfs specifieke postcodegebieden.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -344,7 +345,7 @@
                                     <button class="accordion-button collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseSeven-st-2"
                                         aria-expanded="false" aria-controls="collapseSeven-st-2">
-                                        What is your process like?
+                                        Wat zijn de voordelen van adverteren op Bing?
                                     </button>
                                 </h2>
                                 <div id="collapseSeven-st-2" class="accordion-collapse collapse show"
@@ -353,11 +354,7 @@
                                     <div class="accordion-body">
                                         <div class="capabilities-list">
                                             <div class="choose-accordion-content">
-                                                <p>Axil is data-driven and performance-focused, paving
-                                                    the way
-                                                    for us to charge your business forward and
-                                                    accelerate your
-                                                    growth.</p>
+                                                <p>Adverteren op Bing kan voordelen bieden zoals lagere concurrentie en kosten per klik, een uniek publiek dat niet altijd op Google te vinden is, en integratie met Microsoft-producten. Het kan een waardevolle aanvulling zijn op jouw algehele digitale marketingstrategie.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -390,7 +387,5 @@
     </div>
 </section>
 <!-- title intro end -->
-
-
 </main>
 {{end}}

@@ -25,42 +25,39 @@
                     <a href="{{ "over-ons" | relURL }}" data-hover='over-ons'>Over ons</a>
                   </li>
                   <li class="menu-item-has-children menu-item">
-                    <a href="#" data-hover='Elements'>Diensten</a><i class='bi fa-light fa-plus'></i>
+                    <a href="{{ "diensten" | relURL }}" data-hover='Elements'>Diensten</a><i class='bi fa-light fa-plus'></i>
                     <ul class="sub-menu">
                         <li class="menu-item-has-children">
-                            <a href="#">Website laten maken</a><i class='bi fa-light fa-plus'></i>
+                            <a href="{{ "webdesign" | relURL }}">Webdesign</a><i class='bi fa-light fa-plus'></i>
                             <ul class="sub-menu">
-                                <li><a href="{{ "diensten/website-laten-bouwen" | relURL }}">Website laten bouwen</a></li>
-                                <li><a href="{{ "diensten/website-laten-bouwen" | relURL }}">Website laten bouwen</a></li>
-                                <li><a href="{{ "diensten/website-laten-bouwen" | relURL }}">Website laten bouwen</a></li>
-                                <li><a href="{{ "diensten/website-laten-bouwen" | relURL }}">Website laten bouwen</a></li>
+                                <li><a href="{{ "website-laten-maken" | relURL }}">Website laten maken</a></li>
+                                <li><a href="{{ "webshop-laten-maken" | relURL }}">Webshop laten maken</a></li>
+                                <li><a href="{{ "maatwerk-website-laten-maken" | relURL }}">Maatwerk website</a></li>
+                                <li><a href="{{ "wordpress-website-laten-maken" | relURL }}">Wordpress website</a></li>
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="#">Webshop laten maken</a><i class='bi fa-light fa-plus'></i>
+                            <a href="{{ "vindbaarheid" | relURL }}">Vindbaarheid</a><i class='bi fa-light fa-plus'></i>
                             <ul class="sub-menu">
-                                <li><a href="{{ "diensten/webshop-laten-bouwen" | relURL }}">Webshop laten bouwen</a></li>
-                                <li><a href="{{ "diensten/webshop-laten-bouwen" | relURL }}">Webshop laten bouwen</a></li>
-                                <li><a href="{{ "diensten/webshop-laten-bouwen" | relURL }}">Webshop laten bouwen</a></li>
-                                <li><a href="{{ "diensten/webshop-laten-bouwen" | relURL }}">Webshop laten bouwen</a></li>
+                                <li><a href="{{ "zoekmachine-optimalisatie" | relURL }}">Zoekmachine optimalisatie (SEO)</a></li>
+                                <li><a href="{{ "zoekmachine-advertenties" | relURL }}">Zoekmachine advertenties (SEA)</a></li>
+                                <li><a href="{{ "linkbuilding-uitbesteden" | relURL }}">Linkbuilding</a></li>
+
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="#">Vindbaarheid</a><i class='bi fa-light fa-plus'></i>
+                            <a href="{{ "marketing" | relURL }}">Marketing</a><i class='bi fa-light fa-plus'></i>
                             <ul class="sub-menu">
-                                <li><a href="{{ "diensten/hoger-in-google" | relURL }}">Hoger in Google</a></li>
-                                <li><a href="{{ "diensten/hoger-in-google" | relURL }}">Hoger in Google</a></li>
-                                <li><a href="{{ "diensten/hoger-in-google" | relURL }}">Hoger in Google</a></li>
-                                <li><a href="{{ "diensten/hoger-in-google" | relURL }}">Hoger in Google</a></li>
+                                <li><a href="{{ "social-media-marketing-agency" | relURL }}">Social media marketing</a></li>
+                                <li><a href="{{ "e-mail-marketing-bureau" | relURL }}">E-mail marketing</a></li>
+                                <li><a href="{{ "videomarketing-bureau" | relURL }}">Videomarketing</a></li>
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="#">Maatwerk</a><i class='bi fa-light fa-plus'></i>
+                            <a href="{{ "branding" | relURL }}">Branding</a><i class='bi fa-light fa-plus'></i>
                             <ul class="sub-menu">
-                                <li><a href="{{ "elements-testimonial" | relURL }}">Snelle website</a></li>
-                                <li><a href="{{ "elements-testimonial" | relURL }}">Snelle website</a></li>
-                                <li><a href="{{ "elements-testimonial" | relURL }}">Snelle website</a></li>
-                                <li><a href="{{ "elements-testimonial" | relURL }}">Snelle website</a></li>
+                                <li><a href="{{ "huisstijl-laten-ontwerpen" | relURL }}">Huisstijl laten ontwerpen</a></li>
+                                <li><a href="{{ "logo-laten-maken" | relURL }}">Logo laten maken</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -75,7 +72,7 @@
                   
               </ul>
           </div>
-          <div class="sidebar-social d-flex  gap-5">
+          <!--<div class="sidebar-social d-flex  gap-5">
             <a href="https://www.instagram.com/" target="_blank">
                 <img src="{{ "img/icons/social/instagram.svg" | relURL }}" alt="Instagram">
               </a>
@@ -92,7 +89,7 @@
                 <img src="{{ "img/icons/social/twitter.svg" | relURL }}" alt="Twitter">
               </a>
               
-          </div>
+          </div>-->
       </div>
   </div>
   <!-- Offcanvas area end -->
@@ -157,7 +154,7 @@
                                                       </ul>
                                                   </li>
                                                   <li>
-                                                      <a href="javasript:void(0);" class="mega-menu-title">Vindbaarheid</a>
+                                                      <a href="{{ "vindbaarheid" | relURL }}" class="mega-menu-title">Vindbaarheid</a>
                                                       <ul>
                                                         <li><a href="{{ "/zoekmachine-optimalisatie" | relURL }}">Zoekmachine optimalisatie (SEO)</a></li>
                                                         <li><a href="{{ "/zoekmachine-advertenties" | relURL }}">Zoekmachine advertenties (SEA)</a></li>
@@ -166,7 +163,7 @@
                                                       </ul>
                                                   </li>
                                                   <li>
-                                                      <a href="javasript:void(0);" class="mega-menu-title">Marketing</a>
+                                                      <a href="{{ "marketing" | relURL }}" class="mega-menu-title">Marketing</a>
                                                       <ul>
                                                         <li><a href="{{ "social-media-marketing-agency" | relURL }}">Social media marketing</a></li>
                                                         <li><a href="{{ "e-mail-marketing-bureau" | relURL }}">E-mail marketing</a></li>
@@ -174,7 +171,7 @@
                                                       </ul>
                                                   </li>
                                                   <li>
-                                                      <a href="javasript:void(0);" class="mega-menu-title">Branding</a>
+                                                      <a href="{{ "branding" | relURL }}" class="mega-menu-title">Branding</a>
                                                       <ul>
                                                           <li><a href="{{ "huisstijl-laten-ontwerpen" | relURL }}">Huisstijl laten ontwerpen</a></li>
                                                           <li><a href="{{ "logo-laten-maken" | relURL }}">Logo laten maken</a></li>

@@ -17124,4 +17124,21 @@ ul {
     font-size: 20px;
   }
 }
+
+.sidebar__tag_marin a {
+  display: inline-block;
+  padding: 4px 13px;
+  font-size: 15px;
+  color: var(--clr-common-white);
+  border: 1px solid #D9D9D9;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 5;
+  font-family: var(--tpl-ff-heading);
+}
+.sidebar__tag_marin a:hover {
+  background-color: var(--clr-theme-2);
+  color: var(--clr-common-white);
+  border-color: var(--clr-theme-2);
+}
 /*# sourceMappingURL=main.css.map */

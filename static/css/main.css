@@ -17141,4 +17141,12 @@ ul {
   color: var(--clr-common-white);
   border-color: var(--clr-theme-2);
 }
+
+a.kleur {
+  color: #14cf93;
+}
+
+a.kleur:hover {
+  color: #2fe6b1; /* This is a lighter shade of #14cf93 */
+}
 /*# sourceMappingURL=main.css.map */

@@ -95,86 +95,9 @@
               <div class="col-xxl-4 col-xl-5 col-lg-5">
                 {{ partial "dienstenBlog.html" }}
 
-                      <div class="sidebar__wrapper alice-blue-bg">
-                      <div class="sidebar__widget mb-45">
-                      <div class="">
-                        <h3 class="sidebar__widget-title">Direct contact</h3>
-                        <form
-                          action="https://formspree.io/f/mknlppgz"
-                          method="POST"
-                        >
-                          <div class="row">
-                            <div class="col-xxl-12">
-                              <div class="contact-input">
-                                <input
-                                  type="text"
-                                  placeholder="Je Naam*"
-                                  name="naam"
-                                />
-                              </div>
-                            </div>
-                            <div class="col-xxl-12">
-                              <div class="contact-input">
-                                <input
-                                  type="email"
-                                  placeholder="Je E-Mail*"
-                                  name="mail"
-                                />
-                              </div>
-                            </div>
-                            <div class="col-xxl-12">
-                              <div class="contact-input">
-                                <input
-                                  type="tel"
-                                  placeholder="Telefoon"
-                                  name="tel"
-                                />
-                              </div>
-                            </div>
-                            <div class="col-xxl-12">
-                              <div class="contact-input">
-                                <input
-                                  type="text"
-                                  placeholder="Onderwerp"
-                                  name="onderwerp"
-                                />
-                              </div>
-                            </div>
-                            <div class="col-xxl-12">
-                              <div class="contact-input">
-                                <textarea
-                                  placeholder="Roept u maar"
-                                  name="bericht"
-                                ></textarea>
-                              </div>
-                            </div>
-                            <div class="col-xxl-12">
-                              <div class="postbox__comment-check mb-40">
-                                <input
-                                  class="e-check-input is-black"
-                                  type="checkbox"
-                                  id="c-check"
-                                />
-                                <label class="e-check-label" for="c-check"
-                                  >Ik ga akkoord met de privacy-policy *</label
-                                >
-                              </div>
-                            </div>
-                            <div class="col-xxl-12">
-                              <div class="contact-btn">
-                                <button type="submit" class="input-btn">
-                                  <span class="btn-text contact-btn-marin">Boem!</span
-                                  ><span class="btn-icon"
-                                    ><i class="flaticon-next"></i
-                                  ></span>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
+                {{ partial "contactForm.html" }}
+
+
                   <div class="sidebar__wrapper mt-50 alice-blue-bg">
                       <div class="sidebar__widget">
                           <h3 class="sidebar__widget-title mb-30">Website categorieën</h3>

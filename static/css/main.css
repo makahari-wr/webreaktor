@@ -17149,4 +17149,9 @@ a.kleur {
 a.kleur:hover {
   color: #2fe6b1; /* This is a lighter shade of #14cf93 */
 }
+
+.postbox__item p {
+  margin-bottom: 15px;
+}
+
 /*# sourceMappingURL=main.css.map */

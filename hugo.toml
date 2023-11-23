@@ -8,6 +8,7 @@ portfolio = "/:slug/"
 footerteksten = "/:slug/"
 website-laten-maken = "/:slug/"
 webshop-laten-maken = "/:slug/"
+branches = "/:slug/"
 
 
 # Definieer hier de verwerking van SCSS-bestanden

@@ -5681,18 +5681,18 @@ body {
 .hero__btn {
   position: absolute;
   right: 0;
-  bottom: 30px;
+  bottom: -260px;
   transform: rotate(-45deg);
 }
 @media only screen and (min-width: 1400px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1399px) {
   .hero__btn {
-    bottom: 0px;
+    bottom: -150px;
     transform: rotate(-45deg) scale(0.8);
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero__btn {
-    bottom: 60px;
+    bottom: -250px;
     transform: rotate(-45deg) scale(0.5);
     transform-origin: right bottom;
   }

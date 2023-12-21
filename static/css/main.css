@@ -3830,7 +3830,7 @@ Hero-6 Animation
   width: 5px;
 }
 .offcanvas-nav-wrapper .main-nav-js::before {
-  content: "Web Reaktor";
+  content: "Web- Reaktor";
   position: absolute;
   top: 45%;
   right: 10%;

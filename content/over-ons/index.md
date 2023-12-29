@@ -1,7 +1,7 @@
 ---
-title: "Over-ons"
+title: "Wie zijn wij: Ontdek onze passie en expertise"
 type: "over-ons"
-description: "Leer meer over ons en onze missie op deze pagina."
+description: "Achter elk succesvol project staat een toegewijd team. Ontdek onze verhalen, expertise en wat ons drijft om de beste te zijn in ons vak."
 pageType: "article"
 image: "/images/raket-webreaktor-site.png"
 ---

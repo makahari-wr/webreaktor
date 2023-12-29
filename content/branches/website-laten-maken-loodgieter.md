@@ -1,10 +1,10 @@
 ---
-title: "Loodgieter website laten maken"
+title: "Website laten maken loodgieter: Dicht bij jouw klanten | WebReaktor"
 type: "branches/website-laten-maken-loodgieter"
 slug: "website-laten-maken-loodgieter"
 date: 2023-10-12
 lastmod: 2023-10-15
-description: "Een website maken voor een loodgieter"
+description: "Bouw een solide online aanwezigheid met een professionele website voor jouw loodgietersdiensten. WebReaktor helpt je lekken oplossen!"
 pageType: "article"
 image: "/images/raket-webreaktor-site.png"
 ---

@@ -1,5 +1,5 @@
 ---
-title: ""Portfolio: Zautsen's kantoorinrichting online succes"
+title: "Portfolio: Zautsen's kantoorinrichting online succes"
 type: "portfolio/zautsen"
 slug: "zautsen-kantoorinrichting"
 date: 2023-10-12

@@ -1,5 +1,5 @@
 ---
-title: ""Effectieve marketingstrategieën voor moderne bedrijven"
+title: "Effectieve marketingstrategieën voor moderne bedrijven"
 type: "marketing"
 slug: ""
 date: 2023-10-12

@@ -58,6 +58,8 @@
 	43. work css
 	44. sign css
 
+  45. gemaakt door marin
+
 **********************************************/
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&family=Tenor+Sans&display=swap");
 :root {
@@ -210,7 +212,6 @@ h4,
 h5,
 h6 {
   font-family: var(--tpl-ff-heading);
-  text-transform: capitalize;
   color: var(--clr-theme-primary);
   font-weight: 600;
   line-height: 1.2;
@@ -1338,7 +1339,6 @@ body.mfp-content {
   padding: 21px 48px;
   text-align: center;
   letter-spacing: -0.01em;
-  text-transform: capitalize;
   display: inline-block;
   border: 1px solid #d9d9d9;
   color: var(--clr-common-black);
@@ -3830,7 +3830,7 @@ Hero-6 Animation
   width: 5px;
 }
 .offcanvas-nav-wrapper .main-nav-js::before {
-  content: "Explore Pages.";
+  content: "Web- Reaktor";
   position: absolute;
   top: 45%;
   right: 10%;
@@ -3848,7 +3848,7 @@ Hero-6 Animation
   margin-right: 0;
   height: 300px;
   letter-spacing: 5px;
-  text-align: right;
+  text-align: left;
   z-index: -1;
 }
 @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
@@ -4512,8 +4512,7 @@ Hero-6 Animation
   font-size: 14px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: var(--clr-common-white);
-  cursor: text;
+  color: var(--clr-theme-2);
   padding: 0;
   padding-left: 0px;
   display: inline-block;
@@ -5412,7 +5411,7 @@ Hero-6 Animation
 }
 
 .grey-bg {
-  background-color: var(--clr-bg-gray-1);
+  background-color: #F7F7F7;
 }
 
 .footer-bg {
@@ -5682,18 +5681,18 @@ body {
 .hero__btn {
   position: absolute;
   right: 0;
-  bottom: 30px;
+  bottom: -260px;
   transform: rotate(-45deg);
 }
 @media only screen and (min-width: 1400px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1399px) {
   .hero__btn {
-    bottom: 0px;
+    bottom: -150px;
     transform: rotate(-45deg) scale(0.8);
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero__btn {
-    bottom: 60px;
+    bottom: -250px;
     transform: rotate(-45deg) scale(0.5);
     transform-origin: right bottom;
   }
@@ -7208,7 +7207,7 @@ body {
   display: inline-block;
   margin-bottom: 25px;
   font-family: var(--tpl-ff-heading);
-  text-transform: capitalize;
+
 }
 
 .line__subtitle {
@@ -7259,7 +7258,6 @@ body {
 
 .section__title-inner {
   font-size: 65px;
-  text-transform: capitalize;
   line-height: 1.17;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) and (max-width: 1600px) {
@@ -9031,6 +9029,11 @@ body {
     margin-bottom: 50px;
   }
 }
+.service-page-title-contenet h2 {
+  font-size: 30px;
+  color: var(--clr-common-white);
+  margin-bottom: 35px;
+}
 .service-page-title-contenet h3 {
   font-size: 30px;
   color: var(--clr-common-white);
@@ -10443,7 +10446,7 @@ body {
 
 .team-item-2 {
   position: relative;
-  text-align: center;
+  text-align: top;
   border-top: 1px solid #414141;
 }
 .team-item-2.active .team-thmb-2 {
@@ -10497,7 +10500,7 @@ body {
 }
 .team-thmb-2 img {
   width: 100%;
-  aspect-ratio: 100/92;
+  aspect-ratio: 100/110;
 }
 
 .team-info-2 h3 {
@@ -12084,7 +12087,6 @@ body {
 }
 
 .sidebar__wrapper {
-  background: #F6F6F6;
   padding: 30px 30px;
 }
 
@@ -13015,7 +13017,7 @@ body {
   align-items: center;
   background-color: var(--clr-common-white);
   box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.15);
-  max-width: 1300px;
+  max-width: 1800px;
   z-index: 5;
   gap: 15px 0;
   position: relative;
@@ -13040,6 +13042,26 @@ body {
 }
 @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .case-details-thumb {
+    margin-top: 0;
+  }
+}
+.case-details-thumb-2 {
+  margin-top: -40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .case-details-thumb-2 {
+    margin-top: 0;
+  }
+}
+.case-details-thumb-3 {
+  margin-top: -43px;
+  margin-bottom: 30px;
+  position: relative;
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .case-details-thumb-3 {
     margin-top: 0;
   }
 }
@@ -13086,7 +13108,7 @@ body {
 }
 
 .case-subtitle {
-  font-size: 16px;
+  font-size: 36px;
 }
 .case-subtitle span {
   padding-right: 5px;
@@ -13261,7 +13283,6 @@ body {
   font-size: 40px;
   font-style: italic;
   font-weight: 500;
-  text-transform: capitalize;
   margin-bottom: 50px;
 }
 @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
@@ -15769,7 +15790,6 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: var(--clr-theme-1);
-  text-transform: capitalize;
   font-family: var(--tpl-ff-heading);
 }
 .breadcrumb-menu li:first-child span {
@@ -15810,7 +15830,7 @@ body {
   font-size: 65px;
   font-weight: 700;
   line-height: 1.17;
-  text-transform: capitalize;
+
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .page-title {
@@ -16993,5 +17013,200 @@ label {
 .sketch .progress__border {
   background-color: #fdad00;
 }
+
+
+/*----------------------------------------
+	45. gemaakt door marin
+----------------------------------------*/
+
+.border-btn3 {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 21px 48px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  display: inline-block;
+  border: 1px solid #d9d9d9;
+  color: var(--clr-common-white);
+  background: transparent;
+}
+.border-btn3::before {
+  content: "";
+  position: absolute;
+  height: 400px;
+  width: 430px;
+  top: 50%;
+  left: 50%;
+  background: var(--clr-theme-2);
+  border-radius: 50%;
+  transform: translateX(-22%) translateY(-42%) scale(0);
+  -moz-transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.5s ease-out 0s;
+  -ms-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  z-index: -1;
+}
+.border-btn3:hover::before {
+  transform: translateX(-50%) translateY(-50%) scale(1);
+}
+.border-btn3::after {
+  position: absolute;
+  content: "";
+  background: var(--clr-theme-2);
+  height: 34px;
+  width: 36px;
+  border-radius: 15px;
+  right: -11px;
+  bottom: -11px;
+}
+.border-btn3:hover {
+  color: var(--clr-common-white);
+}
+.border-btn3 .btn-icon {
+  transform: rotate(-45deg);
+  margin-left: 15px;
+  display: inline-block;
+}
+.border-btn3 .btn-icon i {
+  display: inline-block;
+}
+.border-btn3:hover .btn-icon i {
+  animation: iconltr 0.5s forwards;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+/* zwarte lettertype start */
+.contact-btn-marin {
+  color: var(--clr-theme-1);
+}
+
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .service-page-title-contenet-marin {
+    margin-bottom: 50px;
+  }
+}
+.service-page-title-contenet-marin h3 {
+  font-size: 30px;
+  color: var(--clr-common-black);
+  margin-bottom: 35px;
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .service-page-title-contenet-marin h3 {
+    font-size: 26px;
+  }
+}
+.service-page-title-contenet-marin p {
+  margin-bottom: 50px;
+  font-size: 24px;
+  line-height: 1.7;
+  color: var(--clr-common-black);
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .service-page-title-contenet-marin p {
+    font-size: 20px;
+  }
+}
+/* zwarte lettertype einde */
+
+/* witte lettertype start */
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .service-page-title-contenet-marin2 {
+    margin-bottom: 50px;
+  }
+}
+.service-page-title-contenet-marin2 h2 {
+  font-size: 30px;
+  color: var(--clr-common-white);
+  margin-bottom: 35px;
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .service-page-title-contenet-marin2 h3 {
+    font-size: 26px;
+  }
+}
+.service-page-title-contenet-marin2 p {
+  margin-bottom: 50px;
+  font-size: 24px;
+  line-height: 1.7;
+  color: var(--clr-common-white);
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .service-page-title-contenet-marin2 p {
+    font-size: 20px;
+  }
+}
+
+.sidebar__tag_marin a {
+  display: inline-block;
+  padding: 4px 13px;
+  font-size: 15px;
+  color: var(--clr-common-white);
+  border: 1px solid #D9D9D9;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 5;
+  font-family: var(--tpl-ff-heading);
+}
+.sidebar__tag_marin a:hover {
+  background-color: var(--clr-theme-2);
+  color: var(--clr-common-white);
+  border-color: var(--clr-theme-2);
+}
+
+a.kleur {
+  color: #14cf93;
+}
+
+a.kleur:hover {
+  color: #2fe6b1; /* This is a lighter shade of #14cf93 */
+}
+
+.postbox__item p {
+  margin-bottom: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.customTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customTable th, .customTable td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.customTable th {
+  background-color: #14cf93;
+  color: white;
+}
+
+.customTable tr:hover {
+  background-color: #f5f5f5;
+}
+
 
 /*# sourceMappingURL=main.css.map */

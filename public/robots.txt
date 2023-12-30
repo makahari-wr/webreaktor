@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://webreaktor.nl/sitemap.xml

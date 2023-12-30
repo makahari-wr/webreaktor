@@ -76,33 +76,60 @@
     <!-- CSS here -->
 <!-- Preloading Stylesheets -->
 
-<link rel="preload" href="{{ "css/bootstrap.min.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="{{ "css/meanmenu.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="{{ "css/animate.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="{{ "css/swiper-bundle.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="{{ "css/backToTop.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="{{ "css/magnific-popup.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="{{ "css/fontAwesome6Pro.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="{{ "css/flaticon_axil.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="{{ "css/font-autography.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="{{ "css/slick.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="{{ "css/odometer.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="{{ "css/default.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="{{ "css/main.css?vers=2" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+{{ $bootstrap := resources.Get "css/bootstrap.min.css" | resources.Minify | resources.Fingerprint }}
+<link rel="preload" href="{{ $bootstrap.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+{{ $meanmenu := resources.Get "css/meanmenu.css" | resources.Minify | resources.Fingerprint }}
+<link rel="preload" href="{{ $meanmenu.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+{{ $animate := resources.Get "css/animate.css" | resources.Minify | resources.Fingerprint }}
+<link rel="preload" href="{{ $animate.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+{{ $swiper := resources.Get "css/swiper-bundle.css" | resources.Minify | resources.Fingerprint }}
+<link rel="preload" href="{{ $swiper.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+{{ $backToTop := resources.Get "css/backToTop.css" | resources.Minify | resources.Fingerprint }}
+<link rel="preload" href="{{ $backToTop.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+{{ $magnificPopup := resources.Get "css/magnific-popup.css" | resources.Minify | resources.Fingerprint }}
+<link rel="preload" href="{{ $magnificPopup.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+{{ $fontAwesome6Pro := resources.Get "css/fontAwesome6Pro.css" | resources.Minify | resources.Fingerprint }}
+<link rel="preload" href="{{ $fontAwesome6Pro.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+{{ $flaticonAxil := resources.Get "css/flaticon_axil.css" | resources.Minify | resources.Fingerprint }}
+<link rel="preload" href="{{ $flaticonAxil.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+{{ $fontAutography := resources.Get "css/font-autography.css" | resources.Minify | resources.Fingerprint }}
+<link rel="preload" href="{{ $fontAutography.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+{{ $slick := resources.Get "css/slick.css" | resources.Minify | resources.Fingerprint }}
+<link rel="preload" href="{{ $slick.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+{{ $odometer := resources.Get "css/odometer.css" | resources.Minify | resources.Fingerprint }}
+<link rel="preload" href="{{ $odometer.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+{{ $default := resources.Get "css/default.css" | resources.Minify | resources.Fingerprint }}
+<link rel="preload" href="{{ $default.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+{{ $main := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
+<link rel="preload" href="{{ $main.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
 
 <!-- Loading Stylesheets  -->
-<link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/meanmenu.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/animate.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/swiper-bundle.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/backToTop.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/magnific-popup.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/fontAwesome6Pro.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/flaticon_axil.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/font-autography.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/slick.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/odometer.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/default.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+<link rel="stylesheet" href="{{ $bootstrap.RelPermalink }}" integrity="{{ $bootstrap.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $meanmenu.RelPermalink }}" integrity="{{ $meanmenu.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $animate.RelPermalink }}" integrity="{{ $animate.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $swiper.RelPermalink }}" integrity="{{ $swiper.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $backToTop.RelPermalink }}" integrity="{{ $backToTop.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $magnificPopup.RelPermalink }}" integrity="{{ $magnificPopup.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $fontAwesome6Pro.RelPermalink }}" integrity="{{ $fontAwesome6Pro.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $flaticonAxil.RelPermalink }}" integrity="{{ $flaticonAxil.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $fontAutography.RelPermalink }}" integrity="{{ $fontAutography.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $slick.RelPermalink }}" integrity="{{ $slick.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $odometer.RelPermalink }}" integrity="{{ $odometer.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $default.RelPermalink }}" integrity="{{ $default.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $main.RelPermalink }}" integrity="{{ $main.Data.Integrity }}">
+
 
 </head>

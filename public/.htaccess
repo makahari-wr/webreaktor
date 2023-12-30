@@ -1,4 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} ^webreaktor\.nl [NC]
-RewriteRule ^(.*)$ https://www.webreaktor.nl/$1 [L,R=301]

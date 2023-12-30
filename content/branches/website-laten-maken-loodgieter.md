@@ -1,5 +1,5 @@
 ---
-title: "Website laten maken loodgieter: Dicht bij jouw klanten | WebReaktor"
+title: "Website laten maken loodgieter: Dicht bij jouw klanten"
 type: "branches/website-laten-maken-loodgieter"
 slug: "website-laten-maken-loodgieter"
 date: 2023-10-12

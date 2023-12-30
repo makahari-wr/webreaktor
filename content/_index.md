@@ -1,5 +1,5 @@
 ---
-title: "Full-service digitale oplossingen voor jouw bedrijf"
+title: "Full-service digitale oplossingen"
 type: "index"
 date: 2023-10-12
 lastmod: 2023-10-15

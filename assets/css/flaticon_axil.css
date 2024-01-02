@@ -5,6 +5,7 @@ url("../fonts/flaticon_axil.woff?af1b53e90009168e14def3a8ddb99edb") format("woff
 url("../fonts/flaticon_axil.woff2?af1b53e90009168e14def3a8ddb99edb") format("woff2"),
 url("../fonts/flaticon_axil.eot?af1b53e90009168e14def3a8ddb99edb#iefix") format("embedded-opentype"),
 url("../fonts/flaticon_axil.svg?af1b53e90009168e14def3a8ddb99edb#flaticon_axil") format("svg");
+font-display: swap;
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {

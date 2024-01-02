@@ -1,0 +1,25 @@
+<!-- layouts/partials/responsiveimage.html -->
+{{ $src := .src }}
+{{ $alt := .alt }}
+
+{{ with resources.Get $src }}
+    {{ $srcset := .Resize "600x" | .RelPermalink }}
+    {{ $srcset = print $srcset ", " (.Resize "800x").RelPermalink " 800w" }}
+    {{ $srcset = print $srcset ", " (.Resize "1000x").RelPermalink " 1000w" }}
+    {{ $srcset = print $srcset ", " (.Resize "1200x").RelPermalink " 1200w" }}
+    {{ $srcset = print $srcset ", " (.Resize "1400x").RelPermalink " 1400w" }}
+    {{ $srcset = print $srcset ", " (.Resize "1600x").RelPermalink " 1600w" }}
+    {{ $srcset = print $srcset ", " (.Resize "1800x").RelPermalink " 1800w" }}
+    {{ $srcset = print $srcset ", " (.Resize "2000x").RelPermalink " 2000w" }}
+    <img src="{{ .RelPermalink }}"
+         srcset="{{ $srcset }}"
+         sizes="(max-width: 450px) 600px,
+                (max-width: 575px) 800px,
+                (max-width: 767px) 1000px,
+                (max-width: 991px) 1200px,
+                (max-width: 1199px) 1400px,
+                (max-width: 1399px) 1600px,
+                (max-width: 1600px) 1800px,
+                2000px"
+         alt="{{ $alt }}">
+{{ end }}

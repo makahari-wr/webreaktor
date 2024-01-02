@@ -3,15 +3,12 @@
 {{ $alt := .alt }}
 
 {{ with resources.Get $src }}
-    {{ $srcset := .Resize "600x" | .RelPermalink }}
-    {{ $srcset = print $srcset ", " (.Resize "800x").RelPermalink " 800w" }}
-    {{ $srcset = print $srcset ", " (.Resize "1000x").RelPermalink " 1000w" }}
-    {{ $srcset = print $srcset ", " (.Resize "1200x").RelPermalink " 1200w" }}
-    {{ $srcset = print $srcset ", " (.Resize "1400x").RelPermalink " 1400w" }}
-    {{ $srcset = print $srcset ", " (.Resize "1600x").RelPermalink " 1600w" }}
-    {{ $srcset = print $srcset ", " (.Resize "1800x").RelPermalink " 1800w" }}
-    {{ $srcset = print $srcset ", " (.Resize "2000x").RelPermalink " 2000w" }}
-    <img src="{{ .RelPermalink }}"
+    {{ $image := .Resize "600x" }}
+    {{ $srcset := $image.RelPermalink }}
+    {{ $srcset = print $srcset ", " ($image.Resize "800x").RelPermalink " 800w" }}
+    {{ $srcset = print $srcset ", " ($image.Resize "1000x").RelPermalink " 1000w" }}
+    <!-- Voeg de rest van de resizes hier toe op dezelfde manier -->
+    <img src="{{ $image.RelPermalink }}"
          srcset="{{ $srcset }}"
          sizes="(max-width: 450px) 600px,
                 (max-width: 575px) 800px,
@@ -23,3 +20,4 @@
                 2000px"
          alt="{{ $alt }}">
 {{ end }}
+

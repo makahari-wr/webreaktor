@@ -360,23 +360,7 @@ class="page-title-area d-flex align-items-end  p-relative  pb-150 pt-150">
     <!-- faq area end -->
 
   <!-- title intro area -->
-  <section class="title-intro-area fix primary-bg">
-    <div class="container">
-        <div class="title-intro-wrapper section-spacing">
-            <div class="intro__title-wrapper">
-                <h2 class="intro__title-inner folks-text">Let's Babbel</h2>
-            </div>
-            <div class="intro-brn">
-                <a href="{{ "contact" |relURL }}" class="circle-btn is-green">
-                    <span class="icon-box"><i class="flaticon-next"></i></span>
-                    <img src="{{ "img/icons/contact-btn-text.png" | relURL }}" alt="image not found" class="image-text">
-
-
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+  {{ partial "letsBabbelZwart.html" . }}
 <!-- title intro end -->
 </main>
 {{end}}

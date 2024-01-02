@@ -3,21 +3,21 @@
 {{ $alt := .alt }}
 
 {{ with resources.Get $src }}
-    {{ $image := .Resize "600x" }}
-    {{ $srcset := $image.RelPermalink }}
-    {{ $srcset = print $srcset ", " ($image.Resize "800x").RelPermalink " 800w" }}
-    {{ $srcset = print $srcset ", " ($image.Resize "1000x").RelPermalink " 1000w" }}
-    <!-- Voeg de rest van de resizes hier toe op dezelfde manier -->
-    <img src="{{ $image.RelPermalink }}"
-         srcset="{{ $srcset }}"
-         sizes="(max-width: 450px) 600px,
-                (max-width: 575px) 800px,
-                (max-width: 767px) 1000px,
-                (max-width: 991px) 1200px,
-                (max-width: 1199px) 1400px,
-                (max-width: 1399px) 1600px,
-                (max-width: 1600px) 1800px,
-                2000px"
-         alt="{{ $alt }}">
-{{ end }}
+    {{ $original := . }}
+    {{ $srcset := slice }}
+    
+    <!-- Definieer kleinere afbeeldingsgroottes voor kleinere schermen -->
+    {{ range slice "600x" "800x" "1000x" }}
+        {{ $resized := $original.Resize (print . " q100") }} <!-- behoud hoge kwaliteit -->
+        {{ $srcset = $srcset | append (dict "src" $resized.RelPermalink "width" (trim . "x")) }}
+    {{ end }}
 
+    <!-- Gebruik de originele afbeelding voor grotere schermen en kleinere voor kleinere schermen -->
+    <img src="{{ $original.RelPermalink }}" 
+         srcset="{{ range $srcset }}{{ .src }} {{ .width }}w,{{ end }}"
+         sizes="(max-width: 767px) 100%,  
+                (min-width: 768px) 100%"  
+         alt="{{ $alt }}">
+{{ else }}
+    <p>De opgegeven afbeelding kon niet worden gevonden: {{ $src }}</p>
+{{ end }}

@@ -10,8 +10,7 @@ website-laten-maken = "/:slug/"
 webshop-laten-maken = "/:slug/"
 branches = "/:slug/"
 
-[params]
-imageSizes = [600, 800, 1000, 1200, 1400, 1600, 1800, 2000]
+
 
 [security]
   [security.funcs]

@@ -1,5 +1,5 @@
 baseURL = "https://www.webreaktor.nl"
-languageCode = "en-us"
+languageCode = "nl"
 title = "WebReaktor"
 resourceDir = "resources"
 

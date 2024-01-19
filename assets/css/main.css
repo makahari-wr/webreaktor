@@ -3682,6 +3682,11 @@ Hero-6 Animation
   top: 50%;
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) and (max-width: 1600px), only screen and (min-width: 1601px)  {
+  .menu__bar {
+    display: none !important;
+  }
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
   .bar-icon-2 {
     margin-right: -10px;
@@ -5681,7 +5686,7 @@ body {
 .hero__btn {
   position: absolute;
   right: 0;
-  bottom: -260px;
+  bottom: -60px;
   transform: rotate(-45deg);
 }
 @media only screen and (min-width: 1400px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1399px) {

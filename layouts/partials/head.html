@@ -18,55 +18,46 @@
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": "{{ with .Params.pageType }}{{ . }}{{ else }}WebPage{{ end }}",
-            "@id": "{{ .Permalink }}",
-            "url": "{{ .Permalink }}",
-            "name": "{{ .Title }} - WebReaktor",
+            "@type": "article",
+            "@id": "https://www.webreaktor.nl/website-laten-maken-maastricht/",
+            "url": "https://www.webreaktor.nl/website-laten-maken-maastricht/",
+            "name": "Website laten maken in Heerlen? Wij bouwen krachtige websites! - WebReaktor",
             "isPartOf": {
-              "@id": "{{ .Site.BaseURL }}#website"
+              "@id": "https://www.webreaktor.nl#website"
             },
-            "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-07:00" }}",
-            "dateModified": "{{ .Params.lastmod.Format "2006-01-02T15:04:05-07:00" }}",
-            "description": "{{ .Description }}",
+            "datePublished": "2023-10-12T00:00:00+00:00",
+            "dateModified": "2023-10-15T00:00:00+00:00",
+            "description": "Wil je een website laten maken in Maastricht? WebReaktor bouwt krachtige websites die opvallen. Bij je klanten en bij Google.",
             "inLanguage": "nl-NL",
             "potentialAction": [
               {
                 "@type": "ReadAction",
-                "target": ["{{ .Permalink }}"]
+                "target": ["https://www.webreaktor.nl/website-laten-maken-maastricht/"]
               }
             ]
           },
           {
             "@type": "BreadcrumbList",
-            "@id": "{{ .Site.BaseURL }}#breadcrumb",
+            "@id": "https://www.webreaktor.nl#breadcrumb",
             "itemListElement": [
               {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "{{ .Site.BaseURL }}"
+                "item": "https://www.webreaktor.nl"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "{{ .Title }}",
-                "item": "{{ .Permalink }}"
+                "name": "Website laten maken in Heerlen? Wij bouwen krachtige websites! ",
+                "item": "https://www.webreaktor.nl/website-laten-maken-maastricht/"
               }
             ]
-          },
-          {{ if eq .Kind "home" }}
-          {
-            "@type": "WebSite",
-            "@id": "{{ .Site.BaseURL }}#website",
-            "url": "{{ .Site.BaseURL }}",
-            "name": "WebReaktor",
-            "description": "WebReaktor biedt webdesign, SEO en SEA diensten.",
-            "inLanguage": "nl-NL"
           }
-          {{ end }}
         ]
       }
       </script>
+      
 
       
     <!-- einde yoast -->

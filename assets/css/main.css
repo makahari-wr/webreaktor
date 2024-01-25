@@ -1718,6 +1718,9 @@ body.mfp-content {
   display: inline-flex;
   align-items: center;
   gap: 15px;
+}
+
+.marin-btn {
   background-color: #161717;
   padding: 1px;
 }

@@ -1718,6 +1718,8 @@ body.mfp-content {
   display: inline-flex;
   align-items: center;
   gap: 15px;
+  background-color: #161717;
+  padding: 1px;
 }
 .text-btn:hover {
   color: var(--clr-theme-2);

@@ -1719,6 +1719,11 @@ body.mfp-content {
   align-items: center;
   gap: 15px;
 }
+
+.marin-btn {
+  background-color: #161717;
+  padding: 1px;
+}
 .text-btn:hover {
   color: var(--clr-theme-2);
 }
@@ -3237,7 +3242,7 @@ Hero-6 Animation
   max-width: 1790px;
 }
 .header__logo {
-  width: 102px;
+  width: 142px;
 }
 .header__logo img {
   width: 100%;
@@ -17215,6 +17220,11 @@ th {
 
 .text-left {
   text-align: left;
+}
+
+.selected {
+  background-color: #161717 !important;
+  color: white;
 }
 
 

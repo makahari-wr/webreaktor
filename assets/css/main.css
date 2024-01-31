@@ -292,6 +292,9 @@ h2 {
 h2.xlarge {
   font-size: 80px;
 }
+ul.xlarge {
+  font-size: 18px;
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   h2.xlarge {
     font-size: 70px;
@@ -17227,5 +17230,13 @@ th {
   color: white;
 }
 
+.inhoudsopgave {
+  background-color: lightgrey;
+  padding: 20px;
+}
+
+.inhoudsopgave span {
+  font-size: 1.9rem;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -17230,13 +17230,22 @@ th {
   color: white;
 }
 
-.inhoudsopgave {
-  background-color: lightgrey;
-  padding: 20px;
+.title__inhoudsopgave {
+  font-size: 3rem;
 }
 
-.inhoudsopgave span {
-  font-size: 1.9rem;
+.inhoudsopgave {
+  padding: 20px 0px;
 }
+.inhoudsopgave a{
+  color: var(--clr-bg-2);
+
+}
+
+.marinblog h2 {
+  font-size: 30px;
+}
+
+
 
 /*# sourceMappingURL=main.css.map */

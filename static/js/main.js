@@ -59,6 +59,7 @@
 // 56. Progress Bar Animation JS
 // 57. Testimonial Active JS
 // 58. Parallax animation JS
+// 59. Scroll navbar naar -80px vanwege sticky navbar
 
 ****************************************************/
 
@@ -1584,3 +1585,26 @@
 
 
 })(jQuery);
+
+	/*======================================
+	59. Scroll navbar sticky -80px
+	========================================*/
+
+document.addEventListener("DOMContentLoaded", function() {
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function(e) {
+					e.preventDefault();
+
+					let target = document.querySelector(this.getAttribute('href'));
+					let navbarHeight = 80; 
+					let targetPosition = target.getBoundingClientRect().top;
+					let offsetPosition = targetPosition + window.pageYOffset - navbarHeight;
+
+					window.scrollTo({
+							top: offsetPosition,
+							behavior: 'smooth'
+					});
+			});
+	});
+});
+
